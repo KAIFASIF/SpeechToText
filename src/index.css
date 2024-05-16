@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw; 
+  height: 40vh; 
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+.btn-style button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-style button:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  background-color: green;
+  padding: 12px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:active {
+  background-color: darkgreen;
+}
