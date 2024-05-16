@@ -8,9 +8,6 @@ import SpeechRecognition, {
 const App = () => {
   const [textToCopy, setTextToCopy] = useState();
 
-  const clearText = () => {
-    setTextToCopy("");
-  };
   const startListening = () =>
     SpeechRecognition.startListening({ continuous: true, language: "en-IN" });
   const { transcript, resetTranscript, browserSupportsSpeechRecognition } =
